@@ -1,0 +1,18 @@
+{
+	"jumpscare": {
+		"subtitle": "subtitles.thewatcher.jumpscare",
+		"sounds": ["thewatcher:jumpscare"]
+	},
+	"stinger": {
+		"subtitle": "subtitles.thewatcher.stinger",
+		"sounds": ["thewatcher:stinger"]
+	},
+	"heartbeat": {
+		"subtitle": "subtitles.thewatcher.heartbeat",
+		"sounds": ["thewatcher:heartbeat"]
+	},
+	"ambient": {
+		"subtitle": "subtitles.thewatcher.ambient",
+		"sounds": ["thewatcher:drone"]
+	}
+}

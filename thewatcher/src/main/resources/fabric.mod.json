@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "thewatcher",
+	"version": "${version}",
+	"name": "The Watcher",
+	"description": "Mod horror: un'entità ti perseguita nel buio, suoni inquietanti e jumpscare a sorpresa.",
+	"authors": [
+		"Tu"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/thewatcher/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.thewatcher.TheWatcher"
+		],
+		"client": [
+			"com.thewatcher.client.TheWatcherClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
