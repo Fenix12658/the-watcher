@@ -9,18 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 25
+
       - name: Build
         run: |
+          GRADLEW=$(find . -maxdepth 3 -name gradlew | head -n 1)
+          echo "Trovato: $GRADLEW"
+          cd "$(dirname "$GRADLEW")"
           chmod +x gradlew
           ./gradlew build
+
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
         with:
           name: thewatcher-mod
           path: |
-            build/libs/*.jar
-            !build/libs/*-sources.jar
+            **/build/libs/*.jar
+            !**/build/libs/*-sources.jar
